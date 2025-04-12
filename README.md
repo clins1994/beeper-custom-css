@@ -2,6 +2,28 @@
 
 This repository contains custom CSS styles for Beeper.app. It uses a symlink setup to automatically apply any changes you make to the CSS file.
 
+## Issue tracker
+
+📝 TODO
+🛠️ WIP (work in progress)
+🐛 Bug
+✅ Done
+
+- ✅ Make AccountFilters compact (emojis)
+- ✅ Add dividers
+- 🛠️ Make PinnedThreads compact
+  - ✅ Styling groundwork
+  - 🛠️ Deal with unreadIndicator (check screenshot)
+  - 🐛 Avatars of non-pinned threads re-sized
+- 📝 Make threads compact
+- 📝 Do something about the scrollbar
+- 💡 Let me know your ideas
+
+### Preview
+
+![Screenshot of Beeper with custom CSS](screenshot.png)
+
+
 ## Setup
 
 1. Clone this repository:

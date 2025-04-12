@@ -6,10 +6,173 @@ To open dev tools, open the command bar and type "open console"
 */
 
 :root {
-  /*
-  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-  */
+  --pinned-thread-width: 46px;
+  --pinned-thread-height: 50px;
+  --pinned-avatar-size: 30px;
+  --avatar-selected-border-color: #0d4ffb;
+  --emoji-inbox: "🌹";
+  --emoji-unread: "🪻";
+  --emoji-low-priority: "🌻";
+  --emoji-archive: "🌷";
 }
+
+/* utils/pinned-threads.html */
+
+.pinned-threads {
+  display: flex !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  margin: 0 !important;
+  /* gap: 4px !important; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.sidebar-thread.isPinned {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: var(--pinned-thread-width) !important;
+  min-width: var(--pinned-thread-width) !important;
+  max-width: var(--pinned-thread-width) !important;
+  height: var(--pinned-thread-height) !important;
+  min-height: var(--pinned-thread-height) !important;
+  max-height: var(--pinned-thread-height) !important;
+  margin: 0 !important;
+}
+
+/* .sidebar-thread.isPinned.isSelected  */
+
+section.PinnedThreadListItem-module__wrapper--vOPb4 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 4px !important;
+  width: var(--pinned-thread-width) !important;
+  min-width: var(--pinned-thread-width) !important;
+  max-width: var(--pinned-thread-width) !important;
+  height: var(--pinned-thread-height) !important;
+  min-height: var(--pinned-thread-height) !important;
+  max-height: var(--pinned-thread-height) !important;
+  margin: 0 !important;
+  padding-top: 9px !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+section.PinnedThreadListItem-module__wrapper--vOPb4.PinnedThreadListItem-module__isSelected--QKEes:before {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: var(--pinned-thread-width) !important;
+  min-width: var(--pinned-thread-width) !important;
+  max-width: var(--pinned-thread-width) !important;
+  height: var(--pinned-thread-height) !important;
+  min-height: var(--pinned-thread-height) !important;
+  max-height: var(--pinned-thread-height) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* background: transparent !important; */
+  /* border-radius: 0 !important; */
+  /* z-index: 1 !important; */
+}
+
+.PinnedThreadListItem-module__avatarWrapper--GAh1t {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: var(--pinned-avatar-size) !important;
+  min-width: var(--pinned-avatar-size) !important;
+  max-width: var(--pinned-avatar-size) !important;
+  height: var(--pinned-avatar-size) !important;
+  min-height: var(--pinned-avatar-size) !important;
+  max-height: var(--pinned-avatar-size) !important;
+}
+
+.participant-avatar.ThreadAvatar-module__avatar--YOa8Q {
+  width: var(--pinned-avatar-size) !important;
+  min-width: var(--pinned-avatar-size) !important;
+  max-width: var(--pinned-avatar-size) !important;
+  height: var(--pinned-avatar-size) !important;
+  min-height: var(--pinned-avatar-size) !important;
+  max-height: var(--pinned-avatar-size) !important;
+}
+
+.participant-img {
+  object-fit: cover;
+  width: var(--pinned-avatar-size) !important;
+  min-width: var(--pinned-avatar-size) !important;
+  max-width: var(--pinned-avatar-size) !important;
+  height: var(--pinned-avatar-size) !important;
+  min-height: var(--pinned-avatar-size) !important;
+  max-height: var(--pinned-avatar-size) !important;
+}
+
+.PinnedThreadListItem-module__heading--sw4Ox {
+  height: 6px !important;
+  /* background: darkgray !important; */
+}
+
+.PinnedThreadListItem-module__bubblesContainer--aR3cn {
+  display: none !important;
+}
+
+.PinnedThreadListItem-module__title--H3OeV {
+  display: none !important;
+}
+
+/* utils/account-filters.html */
+
+.AccountFilters.AccountFilters-module__wrapper--LlWQJ {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+  gap: 4px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding-bottom: 6px !important;
+}
+
+button.AccountFilters-module__button--jV--j {
+  font-size: 0 !important;
+  width: var(--avatar-size) !important;
+  height: var(--avatar-size) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px !important;
+  margin: auto 0 !important;
+  line-height: 1 !important;
+}
+
+button.AccountFilters-module__button--jV--j:before {
+  font-size: 20px !important;
+  content: "" !important;
+  width: var(--avatar-size) !important;
+  height: var(--avatar-size) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: auto 0 !important;
+  line-height: var(--avatar-size) !important;
+}
+
+.AccountFilters-module__button--jV--j[data-text="Inbox"]::before {
+  content: var(--emoji-inbox) !important;
+}
+
+.AccountFilters-module__button--jV--j[data-text="Unread"]::before {
+  content: var(--emoji-unread) !important;
+}
+
+.AccountFilters-module__button--jV--j[data-text="Low Priority"]::before {
+  content: var(--emoji-low-priority) !important;
+}
+
+.AccountFilters-module__button--jV--j[data-text="Archive"]::before {
+  content: var(--emoji-archive) !important;
+}
+
+:root {}
 
 @media (prefers-color-scheme: dark) {
   :root {}
