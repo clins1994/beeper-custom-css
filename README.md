@@ -14,7 +14,7 @@ This repository contains custom CSS styles for Beeper.app. It uses a symlink set
 - 🛠️ Make PinnedThreads compact
   - ✅ Styling groundwork
   - 🛠️ Deal with unreadIndicator (check screenshot)
-  - 🐛 Avatars of non-pinned threads re-sized
+  - ✅ Avatars of non-pinned threads re-sized
 - 📝 Make threads compact
 - 📝 Do something about the scrollbar
 - 💡 Let me know your ideas

@@ -89,7 +89,7 @@ section.PinnedThreadListItem-module__wrapper--vOPb4.PinnedThreadListItem-module_
   max-height: var(--pinned-avatar-size) !important;
 }
 
-.participant-avatar.ThreadAvatar-module__avatar--YOa8Q {
+.PinnedThreadListItem-module__avatarWrapper--GAh1t > span > div > span.participant-avatar.ThreadAvatar-module__avatar--YOa8Q {
   width: var(--pinned-avatar-size) !important;
   min-width: var(--pinned-avatar-size) !important;
   max-width: var(--pinned-avatar-size) !important;
@@ -98,7 +98,7 @@ section.PinnedThreadListItem-module__wrapper--vOPb4.PinnedThreadListItem-module_
   max-height: var(--pinned-avatar-size) !important;
 }
 
-.participant-img {
+.PinnedThreadListItem-module__avatarWrapper--GAh1t > span > div > span > img.participant-img {
   object-fit: cover;
   width: var(--pinned-avatar-size) !important;
   min-width: var(--pinned-avatar-size) !important;
