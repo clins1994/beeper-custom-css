@@ -50,6 +50,21 @@ The setup script will:
 
 Tip: on mac you can open dev tools from beeper with the shortcut CMD + OPTION + I since it is an electron app
 
+## Undoing Changes
+
+If you want to revert to your original CSS:
+
+1. Run the undo script:
+```bash
+chmod +x undo.sh
+./undo.sh
+```
+
+The undo script will:
+- Remove the symlink
+- Restore your original CSS file from the backup
+- Delete the backup file
+
 ## Notes
 
 - The CSS file is located at: `~/Library/Application Support/BeeperTexts/custom.css`
