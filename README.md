@@ -15,6 +15,8 @@ This repository contains custom CSS styles for Beeper.app. It uses a symlink set
   - ✅ Styling groundwork
   - 🛠️ Deal with unreadIndicator (check screenshot)
   - ✅ Avatars of non-pinned threads re-sized
+- ✅ Show an emoji when no threads are present 🤫
+- ✅ Show only the beeper logo on the welcome screen 🤫
 - 📝 Make threads compact
 - 📝 Do something about the scrollbar
 - 💡 Let me know your ideas

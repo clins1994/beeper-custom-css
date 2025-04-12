@@ -14,6 +14,7 @@ To open dev tools, open the command bar and type "open console"
   --emoji-unread: "🪻";
   --emoji-low-priority: "🌻";
   --emoji-archive: "🌷";
+  --emoji-no-threads: "🌱";
 }
 
 /* utils/pinned-threads.html */
@@ -170,6 +171,33 @@ button.AccountFilters-module__button--jV--j:before {
 
 .AccountFilters-module__button--jV--j[data-text="Archive"]::before {
   content: var(--emoji-archive) !important;
+}
+
+/* hide most of "you've hit inbox zero" section's texts */
+
+/* if you'd like to hide it completely, uncomment out the following */
+
+/* .BrandEmptyStateMessage-module__emptyState--Ee7ob {
+  display: none !important;
+} */
+
+h1.BrandEmptyStateMessage-module__emptyStateTitle--LbRe6 {
+  font-size: 0 !important;
+}
+
+h1.BrandEmptyStateMessage-module__emptyStateTitle--LbRe6:before {
+  font-size: 40px !important;
+  content: var(--emoji-no-threads) !important;
+}
+
+p.BrandEmptyStateMessage-module__emptyStateFallback--dqZ-c {
+  display: none !important;
+}
+
+/* hide "welcome to beeper" section */
+
+.WelcomeView-module__inner--50GZq {
+  display: none !important;
 }
 
 :root {}
